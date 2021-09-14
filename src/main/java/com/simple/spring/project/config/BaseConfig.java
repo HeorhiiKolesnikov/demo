@@ -27,12 +27,12 @@ public class BaseConfig {
     @Bean(name = "prototypeDemoModel")
     @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
     public DemoModel prototypeDemoModel() {
-        return DemoModel.newDemoModel();
+        return DemoModel.prototypeDemoModel();
     }
 
     @Bean(name = "singletonDemoModel")
     @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
     public DemoModel singletonDemoModel() {
-        return DemoModel.newDemoModel();
+        return DemoModel.singletonDemoModel();
     }
 }

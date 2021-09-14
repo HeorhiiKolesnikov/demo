@@ -27,7 +27,10 @@ public class DemoModel {
     @JsonProperty("body")
     private String body;
 
-    public static DemoModel newDemoModel() {
+    public static DemoModel singletonDemoModel() {
+        return DefaultDemoModel.getDefaultModel();
+    }
+    public static DemoModel prototypeDemoModel() {
         return DefaultDemoModel.get();
     }
 
@@ -35,6 +38,9 @@ public class DemoModel {
 
         static int id = 0;
         static int userId = 0;
+
+        @Getter
+        static final DemoModel defaultModel = get();
 
         public static DemoModel get() {
             return new DemoModel(id++, userId++, "some title " + id,
