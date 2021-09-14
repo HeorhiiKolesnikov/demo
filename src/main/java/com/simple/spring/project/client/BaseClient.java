@@ -8,8 +8,6 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandler;
-import java.net.http.HttpResponse.BodyHandlers;
-import java.net.http.HttpResponse.BodySubscriber;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.simple.spring.project.utils.JsonUtils;

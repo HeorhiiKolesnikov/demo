@@ -2,9 +2,6 @@ package com.simple.spring.project.utils;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
-import java.util.List;
-
-import org.springframework.boot.json.JacksonJsonParser;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
