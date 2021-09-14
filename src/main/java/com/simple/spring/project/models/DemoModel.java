@@ -28,13 +28,13 @@ public class DemoModel {
     private String body;
 
     public static DemoModel singletonDemoModel() {
-        return DefaultDemoModel.getDefaultModel();
+        return DemoModelCreator.getDefaultModel();
     }
     public static DemoModel prototypeDemoModel() {
-        return DefaultDemoModel.get();
+        return DemoModelCreator.get();
     }
 
-    private static class DefaultDemoModel {
+    private static class DemoModelCreator {
 
         static int id = 0;
         static int userId = 0;
