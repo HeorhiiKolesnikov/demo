@@ -43,7 +43,7 @@ public class DemoModel {
         static final DemoModel defaultModel = get();
 
         public static DemoModel get() {
-            return new DemoModel(id++, userId++, "some title " + id,
+            return new DemoModel(++id, ++userId, "some title " + id,
                     String.format("{'id':'%s';'userId':'%s'}", id, userId));
         }
     }
